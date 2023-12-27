@@ -12,8 +12,7 @@
 
 ## 프로젝트 설명
 
-<center>
-</center>
+<center><img src="https://github.com/Jiyeong303/WaterPipeLeakClassifier/assets/146100147/91efd2a4-9e6d-403b-a79f-9bad44a2fc7a" width="1000" height="450"/></center>
 
 과학기술정보통신부가 주최한 2022 인공지능 온라인 경진대회에서 4위 이내로 입상하여 사업화 지원 기업에 선정되는 것을 목표로 프로젝트를 진행하였습니다. 최종 사업화 지원 기업에는 선정되지 못했지만, 수치해석 분야에서 3위를 달성하였습니다.
 
@@ -23,20 +22,16 @@
 - 기대 효과 :dart:
 	- 전국 수도관의 13%가 30년 이상 된 노후관로이며, 이는 상수도 품질 저하의 주요 원인
 	- 상수관로 누수 감지 및 분류를 자동화하여 시간과 비용을 절감할 수 있음<br/><br/>
-- 데이터 소개 :bar_chart:
+- 데이터 소개 :bar_chart:<br/><br/><center><img src="https://github.com/Jiyeong303/WaterPipeLeakClassifier/assets/146100147/7baca833-33d3-4f51-b481-139006fa1f19" width="1000" height="200"/></center><br/><br/>
 	- 독립 변수(Independent Variable)
 		- 센서 출력값에 Fourier Transform을 적용하여 계산한 주파수 별 Spectral Density 값
 		- 0Hz부터 5120Hz까지 10Hz단위로 수집된 513개 Columns
 	- 종속 변수(Dependent Variable)
 		- 누수 구분 클래스(Leaktype)
-		- 옥외누수(Out), 옥내누수(In), 정상(Normal), 전기/기계음(Noise), 환경음(Other)
-		**이미지첨부하기**<br/><br/>
+		- 옥외누수(Out), 옥내누수(In), 정상(Normal), 전기/기계음(Noise), 환경음(Other)<br/><br/>
 - 진행과정 요약 :chart_with_upwards_trend:
 	- 데이터 EDA 및 시각화
 	- 클래스 불균형 문제로 인한 SMOTE 오버샘플링 기법 적용
 	- <strong>두 가지 정규화 방법(Column Based, Row Based)</strong>을 통해 데이터로부터 얻을 수 있는 정보를 극대화
 	- KNeighborsClassifier, Conv1D 등 전통적인 머신러닝 모델과 딥러닝 모델을 모두 사용하여 최종 모델 구성
-	- 최종 성능 F1 Score 0.92로 수치해석 분야 3위에 입상
-	- **이미지첨부하기**<br/><br/>
-
-</div>
+	- 최종 성능 F1 Score 0.92로 **수치해석 분야 3위**에 입상
